@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTÃO 4</title>
+</head>
+<body>
+    <script>
+        var nome = prompt("DIGITE O NOME DO CLIENTE")
+        var valorCompra = parseFloat(prompt("Digite o valor da compra"))
+        function calculaDesconto()
+        {
+            var desconto
+            desconto = parseFloat(desconto)
+            var novoPreco
+            novoPreco = parseFloat(novoPreco)
+            if(valorCompra <= 200)
+            {
+                desconto = valorCompra * 0.1
+                novoPreco = valorCompra - desconto
+                alert(`O percentual de desconto foi de 10% e o valor calculado de desconto ficou de ${desconto.toFixed(2)} reais, portanto o valor total a pagar ficou de ${novoPreco.toFixed(2)} reais`)
+            }
+            else if(valorCompra > 200 && valorCompra <= 500)
+            {
+                desconto = valorCompra * 0.15
+                novoPreco = valorCompra - desconto
+                alert(`O percentual de desconto foi de 15% e o valor calculado de desconto ficou de ${desconto.toFixed(2)} reais, portanto o valor total a pagar ficou de ${novoPreco.toFixed(2)} reais`)
+            }
+            else if(valorCompra > 500)
+            {
+                desconto = valorCompra * 0.20
+                novoPreco = valorCompra - desconto
+                alert(`O percentual de desconto foi de 20% e o valor calculado de desconto ficou de ${desconto.toFixed(2)} reais, portanto o valor total a pagar ficou de ${novoPreco.toFixed(2)} reais`)
+            }
+        }
+        alert(`Nome do cliente adicionado foi ${nome} e valor da compra foi de ${valorCompra.toFixed(2)}`)
+        calculaDesconto()
+    </script>
+</body>
+</html>

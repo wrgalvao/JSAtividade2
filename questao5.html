@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTÃO 5</title>
+</head>
+<body>
+    <script>
+        var valor = parseFloat(prompt("Digite um valor negativo da casa de centena"))
+        var centenaNegativo = -100
+        if(valor > centenaNegativo)
+        {
+            alert(`VALOR NÃO É NEGATIVO OU NÃO ESTÁ NA CASA DE CENTENA, ATUALIZE A PÁGINA E TENTE NOVAMENTE`)
+        }
+        else
+        {
+            novoValor = Math.abs(valor)
+        }
+        alert(`Novo valor após aplicar a funcao de módulo é de ${novoValor}`)
+    </script>
+</body>
+</html>

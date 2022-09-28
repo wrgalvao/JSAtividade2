@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTÃO 3</title>
+</head>
+<body>
+    <script>
+        var altura = parseFloat(prompt("Entre com o valor da altura: "))
+        var sexo = prompt("Entre com o sexo da pessoa: ")
+        sexo = sexo.toUpperCase()
+        function calculaPesoIdeal(altura, sexo)
+        {
+            var ideal
+            parseFloat(ideal)
+            if(sexo == "M")
+            {
+                ideal = (72 * altura) - 58
+                console.log(ideal)
+            }
+            else if(sexo == 'F')
+            {
+                ideal = (62 * altura) - 42
+                console.log(ideal)
+            }
+            else
+            {
+                alert('VALOR INVALIDO')
+            }
+            return ideal
+        }
+        var pesoIdeal
+        parseFloat(pesoIdeal)
+        pesoIdeal = calculaPesoIdeal(altura, sexo)
+        alert(`Peso ideal calculado foi de ${pesoIdeal.toFixed(2)}`)
+    </script>
+</body>
+</html>

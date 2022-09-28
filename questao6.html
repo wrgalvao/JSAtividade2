@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTÃO 6</title>
+</head>
+<body>
+    <script>
+        var numeroPessoasFamilia = Number(prompt("Digite o numero de pessoas da família: "))
+        var numeroPeixes = Number(prompt("Digite o número de peixes obtidos na pescaria"))
+        var ingresso = 20
+        var valorTotal
+        valorTotal = parseFloat(valorTotal)
+        var peixesExtras
+        peixesExtras = Number(peixesExtras)
+        var valorCalculadoPeixesExtras
+        valorCalculadoPeixesExtras = parseFloat(valorCalculadoPeixesExtras)
+        if(numeroPessoasFamilia == numeroPeixes)
+        {
+            valorTotal = numeroPessoasFamilia * ingresso
+            alert(`Valor total calculado foi de ${valorTotal} R$`)
+        }
+        else if(numeroPeixes > numeroPessoasFamilia)
+        {
+            peixesExtras = numeroPeixes - numeroPessoasFamilia
+            valorCalculadoPeixesExtras = peixesExtras * 12
+            valorTotal = (numeroPessoasFamilia * ingresso) + valorCalculadoPeixesExtras
+            alert(`O valor total calculado com peixes extras foi de ${valorTotal} R$`)
+        }
+        else
+        {
+            alert(`Te vira ai chegado`)
+        }
+    </script>
+</body>
+</html>

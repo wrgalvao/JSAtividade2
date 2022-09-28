@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>QUESTÃO 2</title>
+</head>
+<body>
+    <script>
+        const investimento = Number(prompt("tipo de investimento: "))
+        const valor = Number(prompt("valor do investimento: "))
+    
+        if (investimento == 1) {
+            const resultado = valor + (valor * 0.05)
+            alert(`O valor de investimento corrigido é R$: ${resultado.toFixed(2)}\n`)
+        }
+        if (investimento == 2) {
+            const resultado = valor + (valor * 0.1)
+            alert(`O valor de investimento corrigido é R$: ${resultado.toFixed(2)}\n`)
+        }  
+        else {
+           const resultado = valor + 0
+           alert(`O valor de investimento corrigido é R$: ${resultado.toFixed(2)}\n`)
+        }
+    </script>
+</body>
+</html>
